@@ -112,7 +112,7 @@
                 <div class="bg-[#161b22] p-6 rounded-xl shadow-lg w-full max-w-xl mx-auto">
                     <h3 class="text-xl font-bold mb-2 gradient-text">Event Schedule</h3>
                     <p class="text-gray-400">
-                        September 19th and 20th, 2025
+                        *September 19th and 20th, 2025*
                     </p>
                     <p class="text-gray-400 mt-2">
                         A 24-hour non-stop coding marathon.
@@ -147,9 +147,9 @@
             <div class="mt-8 p-6 bg-[#20252b] rounded-xl shadow-lg">
                 <h3 class="text-xl font-bold mb-2 text-white">Exclusive Benefits</h3>
                 <ul class="text-gray-400 text-left list-disc list-inside space-y-2 text-sm">
-                    <li>Internship Opportunities: Top teams will receive internship offers from our startup partners.</li>
-                    <li>Expert Mentorship: Get guidance from a panel of industry experts and senior faculty.</li>
-                    <li>Certificates & Awards: All participants will receive a certificate of participation, with special awards for winners.</li>
+                    <li>*Internship Opportunities:* Top teams will receive internship offers from our startup partners.</li>
+                    <li>*Expert Mentorship:* Get guidance from a panel of industry experts and senior faculty.</li>
+                    <li>*Certificates & Awards:* All participants will receive a certificate of participation, with special awards for winners.</li>
                 </ul>
             </div>
         </div>
@@ -206,7 +206,7 @@
                 const countdownDiv = document.getElementById("countdown");
                 if (countdownDiv) {
                     countdownDiv.innerHTML =
-                        days > 0 ? <span class="block text-2xl">Registration closes in</span> ${days} day${days > 1 ? 's' : ''}! : "Registration closed!";
+                        days > 0 ? `<span class="block text-2xl">Registration closes in</span> ${days} day${days > 1 ? 's' : ''}!` : "Registration closed!";
                 }
             }
             updateCountdown();
