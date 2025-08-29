@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeXplosion 2025 - Team Registration</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
+        }
+        /* Styles for the iframe container to make it blend better and stand out intentionally */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            /* Adjust this value to control the aspect ratio for your Google Form.
+               Higher percentage = taller iframe. */
+            padding-bottom: 130%; /* Increased for potentially longer forms */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 1.5rem; /* Increased margin for better spacing */
+            border-radius: 0.75rem; /* Matches the rounded-xl class of the parent div */
+            
+            /* Enhanced border using one of your gradient colors */
+            border: 2px solid #3B82F6; /* More visible, themed border */
+            
+            /* More pronounced shadow for depth */
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.4), 0 6px 15px -3px rgba(0, 0, 0, 0.2);
+            
+            background-color: #20252b; /* Ensures the iframe container has a dark background */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Apply CSS filters to make the iframe content appear in dark mode */
+            filter: invert(1) hue-rotate(180deg);
+            /* Remove explicit background-color here as the filter will handle it */
+            /* background-color: #20252b; */ 
+        }
+    </style>
+</head>
+<body class="bg-[#0d1117] text-[#c9d1d9]">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0d1117] bg-opacity-80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold gradient-text">CodeXplosion</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center w-full max-w-2xl px-4 py-8 mt-16">
+        <div class="w-full p-8 bg-[#20252b] rounded-xl shadow-lg text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold mb-6 text-white">Team Registration</h2>
+            <p class="text-gray-400 mb-6">
+                Fill out the form below to register your team for CodeXplosion 2025!
+            </p>
+
+            <div class="iframe-container">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf9g_R8oQAL7GfcT0tzypQ_i_2xeRTq6Ca5mrhkgpvnYwlZbQ/viewform?embedded=true"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    loading="lazy"
+                >
+                    Loading…
+                </iframe>
+            </div>
+
+            <p class="text-gray-500 text-sm mt-4">
+                Registration closes on September 15, 2025.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm py-4">
+        &copy; 2024 CodeXplosion. Organized by Artificial Intelligence & Data Science Department, Dhanalakshmi College of Engineering.
+    </footer>
+
+</body>
+</html>
